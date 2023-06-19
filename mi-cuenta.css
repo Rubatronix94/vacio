@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: darkblue;
+    display: flex; align-items: center; justify-content: space-around;
+    height: 40px;
+}
+li{
+display: inline-block;
+}
+.navbar a{
+    color: white; text-decoration: none; 
+    padding: 20px;
+}
+
+.grid-container{
+    border: 2px solid black; display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "saldo form "
+                         "footer footer ";
+
+}
+.saldo{
+    grid-area: saldo;
+}
+form{
+    grid-area: form;
+    display: grid; 
+
+    width: 275px; margin-left: auto;
+    padding: 20px;
+}
+input{
+ display: block; margin-bottom: 10px;
+ border: 2px solid black;
+ padding: 5px;  height: 1em;
+}
+button{
+    width: 75%; margin-left: auto;
+    border: 2px solid black;
+    font-weight: bold;
+}
+.btn-footer{
+    grid-area: footer;
+    text-align: center;
+    
+}
+.btn-footer > a{
+    text-decoration: none; color: black;
+    border: 2px solid black; border-radius: 25%;
+    padding: 5px; margin: 20px;
+}
